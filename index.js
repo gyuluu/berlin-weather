@@ -46,6 +46,4 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log("my express server is running");
-});
+app.listen(process.env.PORT || 8080);
