@@ -7,6 +7,15 @@ app.engine("handlebars", hb());
 app.set("view engine", "handlebars");
 
 app.use(express.static("./public"));
+
+app.use(function(req, res, next) {
+  if (req.headers["x-forwarded-proto"] === "https") {
+    res.redirect("http://" + req.hostname + req.url);
+  } else {
+    next();
+  }
+});
+
 let body = "";
 const req = https.request(
   {
