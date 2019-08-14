@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const hb = require("express-handlebars");
 const https = require("https");
-const { key } = require("./config");
 
 app.engine("handlebars", hb());
 app.set("view engine", "handlebars");
