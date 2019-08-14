@@ -13,7 +13,8 @@ const req = https.request(
   {
     method: "GET",
     host: "api.openweathermap.org",
-    path: "/data/2.5/weather?q=berlin,de&appid=" + key + "&units=metric"
+    path:
+      "/data/2.5/weather?q=berlin,de&appid=" + process.env.key + "&units=metric"
   },
   resp => {
     if (resp.statusCode != 200) {
