@@ -1,15 +1,28 @@
 {
   "name": "berlin-weather",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyuluu/berlin-weather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gyuluu/berlin-weather/issues"
+  },
+  "homepage": "https://github.com/gyuluu/berlin-weather#readme",
+  "description": "",
+  "engines": {
+    "node": "10.x"
   }
 }
