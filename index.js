@@ -51,6 +51,7 @@ app.get("/", (req, res) => {
   res.render("welcome", {
     name: body.name,
     temp: body.main.temp,
+    description: body.weather[0].description,
     layout: "main"
   });
 });
